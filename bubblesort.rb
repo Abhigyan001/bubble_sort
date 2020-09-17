@@ -16,4 +16,30 @@ def bubble_sort(arr)
   end
   puts my_arr
 end
-bubble_sort([1, 56, 34, 12, 0])
+
+
+
+
+
+def bubble_sort_by(arr)
+  my_arr = arr
+  condition = true
+  while condition
+    condition = false
+    (0...arr.length-1).each do |i|
+      yield(my_arr[i], my_arr[i+1]).positive?
+        next
+      
+        temp = my_arr[i]
+        my_arr[i] = my_arr[i+1]
+        my_arr[i+1] = temp
+        condition = true
+      
+    end
+  end
+  puts my_arr
+end
+
+bubble_sort_by([2, 5, 1, 9, 6]) do |left,right|
+  left - right
+end
