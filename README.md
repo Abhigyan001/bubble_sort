@@ -43,7 +43,7 @@ Just navigate through the page.
 
 👤 **Abhigyan Mahanta**
 
-- Github: [@enkog](https://github.com/abhigyan001)
+- Github: [@abhigyan001](https://github.com/abhigyan001)
 
 
 ## 🤝 Contributing
