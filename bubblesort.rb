@@ -33,9 +33,5 @@ def bubble_sort_by(arr)
       condition = true
     end
   end
-  puts my_arr
-end
-
-bubble_sort_by(%w[bla ba blabla b blaaablaa]) do |left, right|
-  left.length - right.length
+  my_arr
 end
